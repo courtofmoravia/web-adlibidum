@@ -99,21 +99,21 @@ export const CONTENT = {
   faq: [
     {
       id: 1,
-      question: "Erotické hry pro dva znám, třeba Harašeníčko, Erotické kostky, Sexperimenty. Je to podobné?",
+      question: "Jak se AdLibidum liší od partnerských hlubokých rozhovorů?",
       answer:
-        "AdLibidum není erotická deskovka. V krabici nenajdete kostky, políčka ani pravidla, která vám mechanicky vymezí, co máte a nemáte dělat. Scénáře, které vás budou večerem provázet, jsou inspirátorem a oporou pro vaši fantazii. Jsou pozvánkou do příběhu, ve kterém se na chvíli přestanete jmenovat tak, jak jste zvyklí, a vezmete na sebe roli, za kterou se smí toužit bez ostychu. Tohle není hra na body. Je to hra na chtíč.",
+        "Konverzační karty se ptají přímo na vaše soukromí a minulost, aby analyzovaly váš vztah. AdLibidum vám nasazuje masky fiktivních postav, aby vám pomohlo zažít nezapomenutelné rande s napínavou erotickou předehrou, a tím otevřít témata a touhy bez obavy z hodnocení.",
     },
     {
       id: 2,
-      question: "Mám doma escape room v krabici, je AdLibidum to samé?",
+      question: "V čem je AdLibidum odlišné od zbytku erotických deskovek na trhu?",
       answer:
-        "Nečekejte šifry, úkoly nebo rébusy. AdLibidum neprovokuje mozek, ale smysly. Cílem je, abyste se ztratili v roli. Místo logických hádanek řešíte emoce, napětí a přitažlivost. Neutíkáte z místnosti, ale z každodenní rutiny.",
+        "AdLibidum není o kostkách a pravidlech. Naše scénáře, které vás budou večerem provázet, jsou inspirací a oporou pro vaši fantazii. Jsou pozvánkou do příběhu, ve kterém na sebe vezmete roli, ve které můžeme bezostyžně toužit. Nehraje se na body, hraje se na chtíč.",
     },
     {
       id: 3,
-      question: "Mám doma partnerské hluboké rozhovory, je to něco na ten princip?",
+      question: "Je AdLibidum escape room v krabici?",
       answer:
-        "Konverzační karty se ptají přímo na vaše soukromí a minulost. AdLibidum ale není o analýze vašeho vztahu. Nasazuje vám masky fiktivních postav, protože správně zvolená slova dokáží probudit a stupňovat vzrušení víc než co jiného. Díky tomu můžete otevřít témata a touhy s lehkostí a bez obavy z hodnocení.",
+        "Není. Escape rooms se zaměřují na kolektivní řešení hádanek, stojí na hádankách, konkrétním místě a na rekvizitách. AdLibidum stojí na příběhu a scénáři, ve kterém si vy sami zahrajete, v prostředí, které si sami vyberete. Nečekejte šifry a rébusy, čekejte erotické napětí. Neutíkáte z místnosti, utíkáte z každodenní rutiny.",
     },
     {
       id: 4,
