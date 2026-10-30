@@ -46,6 +46,7 @@ export const CONTENT = {
       "8 herních rekvizit",
       "tématický playlist",
       "drobné rekvizity",
+      "překvapení pro dotvoření atmosféry",
     ],
     button: "objednat",
     faqNotePrefix: "Pokud ještě pořád váháte, jestli je Adlibidum pro vás, mrkněte na ",
