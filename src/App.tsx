@@ -123,32 +123,32 @@ export default function App() {
 
       {/* Hero section */}
       <section
-        className="min-h-[75svh] w-full relative flex flex-col items-center justify-center py-12 sm:py-20 px-6 overflow-hidden bg-gradient-to-b from-brand-bg via-brand-bg/90 to-brand-bg"
+        className="min-h-[80svh] w-full relative flex flex-col items-center justify-center py-12 sm:py-20 px-6 overflow-hidden bg-gradient-to-b from-brand-bg via-brand-bg/90 to-brand-bg"
         data-node-id="1:3"
       >
-        <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-0 items-center">
+        <div className="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-0 items-center">
 
-          <div className="lg:col-span-7 flex flex-col items-center justify-center relative order-2 lg:order-1 z-10" data-node-id="1:5">
-            <div className="relative w-[95vw] max-w-[95vw] sm:w-full sm:max-w-[650px] lg:max-w-[780px] xl:max-w-[860px] aspect-[16/10] flex items-center justify-center">
+          <div className="lg:col-span-8 flex flex-col items-center lg:items-end justify-center relative order-2 lg:order-1 z-10" data-node-id="1:5">
+            <div className="relative w-[98vw] max-w-[98vw] sm:w-full sm:max-w-[750px] lg:max-w-[1100px] xl:max-w-[1250px] aspect-[16/10] flex items-center justify-center">
               <img
                 src={imgBoxImg1}
                 alt="AdLibidum krabice"
-                className="w-full h-full object-contain pointer-events-none drop-shadow-[0_25px_50px_rgba(7,4,42,0.18)] relative z-10 transition duration-700 hover:rotate-1 hover:scale-105"
+                className="w-full h-full object-contain pointer-events-none drop-shadow-[0_30px_60px_rgba(7,4,42,0.2)] relative z-10 transition duration-700 hover:rotate-1 hover:scale-105"
               />
               <img
                 src={imgBoxShadow}
                 alt=""
                 aria-hidden="true"
-                className="absolute -bottom-6 sm:-bottom-10 w-[120%] max-w-none pointer-events-none opacity-80 z-0"
+                className="absolute -bottom-8 sm:-bottom-12 w-[125%] max-w-none pointer-events-none opacity-75 z-0"
               />
             </div>
           </div>
 
-          <div className="lg:col-span-5 flex flex-col items-start lg:-ml-20 order-1 lg:order-2 z-20" data-node-id="1:7">
-            <div className="bg-brand-bg/85 backdrop-blur-md rounded-[28px] p-6 sm:p-10 xl:p-12 border border-black/10 shadow-[0_20px_50px_rgba(7,4,42,0.12)] w-full max-w-[620px] flex flex-col gap-6 sm:gap-8">
+          <div className="lg:col-span-4 flex flex-col items-start lg:-ml-40 xl:-ml-48 order-1 lg:order-2 z-20" data-node-id="1:7">
+            <div className="bg-brand-bg/85 backdrop-blur-md rounded-[28px] p-6 sm:p-10 xl:p-12 border border-black/10 shadow-[0_20px_50px_rgba(7,4,42,0.15)] w-full max-w-[580px] flex flex-col gap-6 sm:gap-8">
               <div className="flex flex-col gap-4 sm:gap-6" data-node-id="1:8">
                 <h1
-                  className="font-caslon-bold text-[30px] sm:text-[38px] xl:text-[44px] uppercase text-brand-fg leading-[1.2] tracking-tight"
+                  className="font-caslon-bold text-[28px] sm:text-[34px] xl:text-[40px] uppercase text-brand-fg leading-[1.2] tracking-tight"
                   data-node-id="1:9"
                   style={{ fontFeatureSettings: '"liga" 0' }}
                 >
@@ -157,7 +157,7 @@ export default function App() {
                 {CONTENT.hero.paragraphs.map((p, i) => (
                   <p
                     key={i}
-                    className="font-caslon-regular text-[18px] sm:text-[20px] text-brand-fg leading-[1.4] max-w-[520px]"
+                    className="font-caslon-regular text-[17px] sm:text-[19px] text-brand-fg leading-[1.4]"
                     data-node-id="1:10"
                   >
                     {p}
@@ -166,17 +166,17 @@ export default function App() {
               </div>
 
               {/* CTA */}
-              <div className="flex flex-wrap items-center gap-4 sm:gap-5 pt-2" data-node-id="1:11">
+              <div className="flex flex-wrap items-center gap-4 pt-2" data-node-id="1:11">
                 <button
                   onClick={() => setOrderModalOpen(true)}
-                  className="bg-brand-ac hover:bg-brand-fg/90 active:scale-95 transition duration-200 text-brand-bg font-caslon-bold text-[18px] sm:text-[20px] uppercase px-8 sm:px-12 py-3.5 sm:py-4 rounded-[90px] shadow-lg shadow-brand-ac/25 cursor-pointer"
+                  className="bg-brand-ac hover:bg-brand-fg/90 active:scale-95 transition duration-200 text-brand-bg font-caslon-bold text-[17px] sm:text-[19px] uppercase px-8 sm:px-10 py-3.5 sm:py-4 rounded-[90px] shadow-lg shadow-brand-ac/25 cursor-pointer"
                   data-node-id="1:12"
                 >
                   {CONTENT.hero.buttons.order}
                 </button>
                 <a
                   href="#experience"
-                  className="border-2 border-brand-ac hover:bg-brand-ac/10 active:scale-95 transition duration-200 text-brand-ac font-caslon-bold text-[18px] sm:text-[20px] uppercase px-8 sm:px-12 py-3.5 sm:py-4 rounded-[90px] cursor-pointer text-center"
+                  className="border-2 border-brand-ac hover:bg-brand-ac/10 active:scale-95 transition duration-200 text-brand-ac font-caslon-bold text-[17px] sm:text-[19px] uppercase px-8 sm:px-10 py-3.5 sm:py-4 rounded-[90px] cursor-pointer text-center"
                   data-node-id="1:14"
                 >
                   {CONTENT.hero.buttons.more}
