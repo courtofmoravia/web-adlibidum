@@ -97,48 +97,65 @@ export const CONTENT = {
   },
 
   faq: [
-    {
-      id: 1,
-      question: "Jak se AdLibidum liší od partnerských hlubokých rozhovorů?",
-      answer:
-        "Konverzační karty se ptají přímo na vaše soukromí a minulost, aby analyzovaly váš vztah. AdLibidum vám nasazuje masky fiktivních postav, aby vám pomohlo zažít nezapomenutelné rande s napínavou erotickou předehrou, a tím otevřít témata a touhy bez obavy z hodnocení.",
-    },
-    {
-      id: 2,
-      question: "V čem je AdLibidum odlišné od zbytku erotických deskovek na trhu?",
-      answer:
-        "AdLibidum není o kostkách a pravidlech. Naše scénáře, které vás budou večerem provázet, jsou inspirací a oporou pro vaši fantazii. Jsou pozvánkou do příběhu, ve kterém na sebe vezmete roli, ve které můžeme bezostyžně toužit. Nehraje se na body, hraje se na chtíč.",
-    },
-    {
-      id: 3,
-      question: "Je AdLibidum escape room v krabici?",
-      answer:
-        "Není. Escape rooms se zaměřují na kolektivní řešení hádanek, stojí na hádankách, konkrétním místě a na rekvizitách. AdLibidum stojí na příběhu a scénáři, ve kterém si vy sami zahrajete, v prostředí, které si sami vyberete. Nečekejte šifry a rébusy, čekejte erotické napětí. Neutíkáte z místnosti, utíkáte z každodenní rutiny.",
-    },
-    {
-      id: 4,
-      question: "Erotický role-play? Jak moc eroticky odvážné to je?",
-      answer:
-        "Hranice i tempo máte pevně ve svých rukou. Hra poskytuje atmosféru, podněty a scénář, ale jak daleko a jakým způsobem se rozhodnete jít, je výhradně na vaší vzájemné domluvě a komfortu.",
-    },
-    {
-      id: 5,
-      question: "Klasickou deskovku si mohu zahrát i několikrát po sobě, jak je to u AdLibidum?",
-      answer:
-        "Příběh je navržen jako ucelený zážitek na jeden intenzivní večer, ale díky větveným rozhodnutím a možnosti prohodit si role nabízí i opakované hraní s úplně jinou dynamikou.",
-    },
-    {
-      id: 6,
-      question: "Zlepší AdLibidum kvalitativně můj vztah?",
-      answer:
-        "AdLibidum je především záruka neobyčejně stráveného večera. Věříme, že sex a erotika jsou prostředkem ke skvělému a naplňujícímu partnerskému životu. Rande v roli vám dává příležitost zažít společně něco neotřelého, ale také otevřít (znovu) konverzaci o tom, co vás vzrušuje a jak obohatit váš společný sexuální život.",
-    },
-    {
-      id: 7,
-      question: "Je příprava náročná?",
-      answer:
-        "Nečekejte biflování replik nebo nákup pomůcek. Součástí krabice je Průvodní dopis, který vám poradí, jak si navodit správně erotickou noir atmosféru. Pomůže, když se letmo seznámíte se sývm scénářem, ale předem nic studovat nemusíte. Nalejte si sklenku něčeho dobrého, ztlumte osvětlení, pusťte nás kurátorovaný playlist, a nechte se unést rolí.",
-    },
+      {
+        id: 1,
+        question: "Jak se AdLibidum liší od partnerských hlubokých rozhovorů?",
+        answerParagraphs: [
+          "Konverzační karty se ptají přímo na vaše soukromí a minulost, aby analyzovaly váš vztah. AdLibidum vám nasazuje masky fiktivních postav, aby vám pomohlo zažít nezapomenutelné rande s napínavou erotickou předehrou, a tím otevřít témata a touhy bez obavy z hodnocení.",
+        ],
+      },
+      {
+        id: 2,
+        question: "V čem je AdLibidum odlišné od zbytku erotických deskovek na trhu?",
+        answerParagraphs: [
+          "AdLibidum není o kostkách a pravidlech. Naše scénáře, které vás budou večerem provázet, jsou inspirací a oporou pro vaši fantazii. Jsou pozvánkou do příběhu, ve kterém na sebe vezmete roli, ve které můžeme bezostyžně toužit. Nehraje se na body, hraje se na chtíč.",
+        ],
+      },
+      {
+        id: 3,
+        question: "Je AdLibidum escape room v krabici?",
+        answerParagraphs: [
+          "Není. Escape rooms se zaměřují na kolektivní řešení hádanek, stojí na hádankách, konkrétním místě a na rekvizitách. AdLibidum stojí na příběhu a scénáři, ve kterém si vy sami zahrajete, v prostředí, které si sami vyberete.",
+          "Nečekejte šifry a rébusy, čekejte erotické napětí. Neutíkáte z místnosti, utíkáte z každodenní rutiny.",
+        ],
+      },
+      {
+        id: 4,
+        question: "Je AdLibidum klasické stolní RPG s erotikou?",
+        answerParagraphs: [
+          "Jen velmi lehce. Je pouze pro dva hráče, nepotřebuje vypravěče a nemá žádné herní mechaniky s kostkami nebo prvky náhody. Z žánru si bereme jen hravost, scénář, námět na postavy a příběhový rámec.",
+        ],
+      },
+      {
+        id: 5,
+        question: "Dá se AdLibidum hrát i několikrát po sobě?",
+        answerParagraphs: [
+          "Ano, nic tomu nebrání. Znalost příběhu a průběhu hry může být dokonce výhoda, když se chcete více zaměřit na hraní role, drama a prožitek. Stejně tak je možné si zahrát scénář s jiným partnerem ;).",
+        ],
+      },
+      {
+        id: 6,
+        question: "Zlepší AdLibidum kvalitativně můj vztah?",
+        answerParagraphs: [
+          "Věříme, že sex a erotika jsou prostředkem k naplňujícímu partnerskému životu. AdLibidum je především záruka neobyčejně stráveného večera, ale i příležitost otevřít konverzaci o tom, co vás vzrušuje a jak obohatit společný sexuální život.",
+        ],
+      },
+      {
+        id: 7,
+        question: "Kolik je potřeba času na přípravu?",
+        answerParagraphs: [
+          "Celá hra samotná zabere odhadem 3 hodiny. Pokud si scénář předem prolistujete, může to pomoct herní dobu lehce zkrátit. Pokud se necháte unést, počítejte navíc zhruba hodinku.",
+          "Před hrou doporučujeme si dát sprchu, obléct si něco pěkného, zkrátka jako byste šli na společné rande.",
+          "Nebudete se biflovat repliky nebo nakupovat pomůcky. AdLibidum vám pomůže si jednoduše doma navodit správně erotickou noir atmosféru.",
+        ],
+      },
+      {
+        id: 8,
+        question: "Je AdLibidum opravdová detektivka?",
+        answerParagraphs: [
+          "Není, detektivní příběh jsou jen kulisy pro interakci. AdLibidum není o detektivní práci, o řešení rébusů nebo o práci s tajemstvím. Hlavní kouzlo hry je společné budování napětí a erotické předehry.",
+        ],
+      },
   ],
 
   footer: {
