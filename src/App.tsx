@@ -251,42 +251,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Newsletter banner */}
-      <section
-        className="w-full py-16 sm:py-24 px-6 flex items-center justify-center bg-brand-fg/2 border-y border-brand-fg/15"
-        data-node-id="1:34"
-      >
-        <div className="w-full max-w-[1200px] flex flex-col lg:flex-row gap-6 sm:gap-10 xl:gap-14 items-center justify-center text-center" data-node-id="1:35">
-          <p
-            className="font-caslon-regular text-[16px] sm:text-[16px] md:text-[24px] text-brand-fg brand-bgspace-nowrap shrink-0"
-            data-node-id="1:36"
-            style={{ fontFeatureSettings: '"liga" 0' }}
-          >
-            {CONTENT.newsletter.title}
-          </p>
-
-          <form onSubmit={handleNewsletterSubmit} className="w-full max-w-[560px]">
-            <div className="relative flex items-center w-full bg-brand-bg border border-brand-fg rounded-[90px] p-1.5 sm:p-2 shadow-[0px_4px_16px_rgba(7,4,42,0.06)] focus-within:border-brand-ac transition-colors">
-              <input
-                type="email"
-                value={newsletterEmail}
-                onChange={(e) => setNewsletterEmail(e.target.value)}
-                placeholder={CONTENT.newsletter.placeholder}
-                className="flex-1 bg-transparent px-5 sm:px-7 py-2.5 sm:py-3 font-caslon-regular text-[17px] sm:text-[20px] text-brand-fg placeholder-brand-fg/45 focus:outline-none min-w-0"
-                required
-              />
-              <button
-                type="submit"
-                className="bg-brand-ac hover:bg-brand-fg/90 active:scale-95 transition-all text-brand-bg font-caslon-bold text-[16px] sm:text-[20px] uppercase px-6 sm:px-10 py-3 sm:py-3.5 rounded-[90px] cursor-pointer brand-bgspace-nowrap shadow-md shrink-0"
-                data-node-id="1:37"
-              >
-                {newsletterStatus === "success" ? CONTENT.newsletter.successButton : CONTENT.newsletter.button}
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-
       {/* Imagine section */}
       <section
         ref={imagineRef}
@@ -520,6 +484,7 @@ export default function App() {
         data-node-id="1:17"
       >
         <div className="w-full max-w-[1200px] flex flex-col items-center relative" data-node-id="1:30">
+          {/* Nadpis ABOUT */}
           <div className="w-full max-w-[1000px] flex justify-center select-none" data-node-id="1:31">
             <img
               src={svgHeadlineAbout}
@@ -528,42 +493,82 @@ export default function App() {
               style={{ borderStyle: 'none', borderColor: 'rgba(0, 0, 0, 0)' }}
             />
           </div>
-          <div
-            style={{
-              transform: `translateY(${aboutOffset}px)`,
-              transition: 'transform 0.01s linear',
-            }}
-            className="bg-brand-bg border border-brand-fg drop-shadow-[0px_10px_25px_rgba(7,4,42,0.20)] rounded-[24px] p-6 sm:p-10 md:p-16 relative z-10 max-w-[640px] w-full text-left mt-2 sm:mt-4 will-change-transform"
-            data-node-id="1:32"
-          >
-            <p
-              className="font-caslon-regular text-[16px] sm:text-[18px] md:text-[20px] text-brand-fg leading-[1.5]"
-              data-node-id="1:33"
-            >
-              {CONTENT.about.paragraphs[0].prefix}
-              {CONTENT.about.paragraphs[0].team.map((member, i, arr) => (
-                <React.Fragment key={i}>
-                  <b>{member.name}</b> ({member.role})
-                  {i < arr.length - 2 ? ", " : i === arr.length - 2 ? " a " : "."}
-                </React.Fragment>
+
+          <div className="flex flex-col items-center text-center mt-6 mb-12 text-brand-fg">
+            <p className="font-caslon-regular text-[18px] sm:text-[20px] mb-4">
+              {CONTENT.about.headlinePrefix}
+            </p>
+
+            <div className="flex flex-col gap-1">
+              {CONTENT.about.team.map((member, i) => (
+                <div key={i} className="text-[15px] sm:text-[17px] tracking-wide">
+                  <span className="uppercase">{member.role}</span>{" "}
+                  <span className="font-bold uppercase">{member.name}</span>
+                </div>
               ))}
-            </p>
+            </div>
           </div>
+
           <div
             style={{
               transform: `translateY(${aboutOffset}px)`,
               transition: 'transform 0.01s linear',
             }}
-            className="bg-brand-bg border border-brand-fg drop-shadow-[0px_10px_25px_rgba(7,4,42,0.20)] rounded-[24px] p-6 sm:p-10 md:p-16 relative z-10 max-w-[640px] w-full text-left mt-2 sm:mt-4 will-change-transform"
+            className="bg-brand-bg border border-brand-fg drop-shadow-[0px_10px_25px_rgba(7,4,42,0.20)] rounded-[24px] p-6 sm:p-10 md:p-16 relative z-10 max-w-[640px] w-full text-left will-change-transform"
             data-node-id="1:32"
           >
             <p
               className="font-caslon-regular text-[16px] sm:text-[18px] md:text-[20px] text-brand-fg leading-[1.5]"
               data-node-id="1:33"
             >
-              {CONTENT.about.paragraphs[1]}
+              {CONTENT.about.paragraph}
+
+              <span className="relative inline-block group cursor-pointer border-b border-brand-fg pb-[1px]">
+                {CONTENT.about.interactiveText}.
+
+                <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-[#07042a] text-white text-xs sm:text-sm rounded whitespace-nowrap shadow-lg z-20">
+                  {CONTENT.about.tooltipText}
+                  <span className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-[#07042a]" />
+                </span>
+              </span>
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Newsletter banner */}
+      <section
+        className="w-full py-16 sm:py-24 px-6 flex items-center justify-center bg-brand-fg/2 border-y border-brand-fg/15"
+        data-node-id="1:34"
+      >
+        <div className="w-full max-w-[1200px] flex flex-col lg:flex-row gap-6 sm:gap-10 xl:gap-14 items-center justify-center text-center" data-node-id="1:35">
+          <p
+            className="font-caslon-regular text-[16px] sm:text-[16px] md:text-[24px] text-brand-fg brand-bgspace-nowrap shrink-0"
+            data-node-id="1:36"
+            style={{ fontFeatureSettings: '"liga" 0' }}
+          >
+            {CONTENT.newsletter.title}
+          </p>
+
+          <form onSubmit={handleNewsletterSubmit} className="w-full max-w-[560px]">
+            <div className="relative flex items-center w-full bg-brand-bg border border-brand-fg rounded-[90px] p-1.5 sm:p-2 shadow-[0px_4px_16px_rgba(7,4,42,0.06)] focus-within:border-brand-ac transition-colors">
+              <input
+                type="email"
+                value={newsletterEmail}
+                onChange={(e) => setNewsletterEmail(e.target.value)}
+                placeholder={CONTENT.newsletter.placeholder}
+                className="flex-1 bg-transparent px-5 sm:px-7 py-2.5 sm:py-3 font-caslon-regular text-[17px] sm:text-[20px] text-brand-fg placeholder-brand-fg/45 focus:outline-none min-w-0"
+                required
+              />
+              <button
+                type="submit"
+                className="bg-brand-ac hover:bg-brand-fg/90 active:scale-95 transition-all text-brand-bg font-caslon-bold text-[16px] sm:text-[20px] uppercase px-6 sm:px-10 py-3 sm:py-3.5 rounded-[90px] cursor-pointer brand-bgspace-nowrap shadow-md shrink-0"
+                data-node-id="1:37"
+              >
+                {newsletterStatus === "success" ? CONTENT.newsletter.successButton : CONTENT.newsletter.button}
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 

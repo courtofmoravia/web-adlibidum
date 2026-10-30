@@ -44,11 +44,10 @@ export const CONTENT = {
   inside: {
     title: "Co je uvnitř?",
     items: [
-      "průvodní dopis",
-      "8 herních rekvizit",
-      "tématický playlist",
-      "drobné rekvizity",
-      "překvapení pro dotvoření atmosféry",
+      "Scénář pro ni a pro něj",
+      "Průvodní dopis",
+      "Tématický playlist",
+      "Drobné rekvizity",
     ],
     button: "objednat",
     faqNotePrefix: "Pokud ještě pořád váháte, jestli je Adlibidum pro vás, mrkněte na ",
@@ -84,20 +83,17 @@ export const CONTENT = {
   ],
 
   about: {
-    paragraphs: [
-      {
-        prefix: "Za projektem stojí tito živí lidé: ",
-        team: [
-          { name: "Petr Kuběnský", role: "scénář" },
-          { name: "Libor Komárek", role: "dramaturg" },
-          { name: "Kevin W. Scherrer", role: "výtvarník" },
-          { name: "Pavla Novotná", role: "produkce" },
-          { name: "Martina Pouchlá", role: "webové texty" },
-          { name: "Petr Pouchlý", role: "režie" },
-        ],
-      },
-      "Texty jsme psali ručně v Google Docs bez použití generativní AI. Při tvorbě vizuálu jsme si vystačili s Figmou, InDesignem a Blenderem. Pro vytvoření pětice příběhových obrazů jsme použili ComfyUI a lokální model (Z-Image-Turbo v kombinaci s Qwen3).",
+    headlinePrefix: "Za projektem stojí tito živí lidé:",
+    team: [
+      { name: "Petr Kuběnský", role: "scénář" },
+      { name: "Libor Komárek", role: "dramaturg" },
+      { name: "Kevin W. Scherrer", role: "výtvarník" },
+      { name: "Pavla Novotná", role: "produkce" },
+      { name: "Petr Pouchlý", role: "režie" },
     ],
+    paragraph: "Texty jsme psali ručně v Google Docs bez použití generativní AI. Při tvorbě vizuálu jsme si vystačili s Figmou, InDesignem a Blenderem. Pro vytvoření pětice příběhových obrazů jsme použili ComfyUI a ",
+    interactiveText: "lokální model",
+    tooltipText: "Z-Image-Turbo v kombinaci s Qwen3",
   },
 
   faq: [
