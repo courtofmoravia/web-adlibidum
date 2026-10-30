@@ -123,7 +123,7 @@ export default function App() {
 
       {/* Hero section */}
       <section
-        className="w-full relative flex flex-col items-center justify-center pt-4 sm:pt-8 pb-16 md:pb-24 lg:py-16 overflow-hidden bg-gradient-to-b from-brand-bg via-brand-bg/80 to-brand-bg"
+        className="min-h-[60svh] w-full relative flex flex-col items-center justify-center py-12 sm:py-16 px-6 overflow-hidden bg-gradient-to-b from-brand-bg via-brand-bg/80 to-brand-bg"
         data-node-id="1:3"
       >
         <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
