@@ -495,15 +495,20 @@ export default function App() {
           </div>
 
           <div className="flex flex-col items-center text-center mt-6 mb-12 text-brand-fg">
-            <p className="font-caslon-regular text-[18px] sm:text-[20px] mb-4">
+            <p className="font-caslon-regular text-[18px] sm:text-[20px] mb-6">
               {CONTENT.about.headlinePrefix}
             </p>
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-1.5 items-start">
               {CONTENT.about.team.map((member, i) => (
-                <div key={i} className="text-[15px] sm:text-[17px] tracking-wide">
-                  <span className="uppercase">{member.role}</span>{" "}
-                  <span className="font-bold uppercase">{member.name}</span>
+                <div key={i} className="flex items-center text-[15px] sm:text-[17px] tracking-wide">
+                  <span className="w-[140px] sm:w-[160px] text-right uppercase font-roboto-condensed font-normal pr-4">
+                    {member.role}
+                  </span>
+
+                  <span className="text-left uppercase font-roboto-condensed font-extrabold">
+                    {member.name}
+                  </span>
                 </div>
               ))}
             </div>
