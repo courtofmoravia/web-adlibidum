@@ -85,10 +85,10 @@ export const CONTENT = {
   about: {
     headlinePrefix: "Za projektem stojí tito živí lidé:",
     team: [
-      { name: "Petr Kuběnský", role: "scénář" },
-      { name: "Libor Komárek", role: "dramaturg" },
       { name: "Kevin W. Scherrer", role: "výtvarník" },
       { name: "Pavla Novotná", role: "produkce" },
+      { name: "Libor Komárek", role: "dramaturg" },
+      { name: "Petr Kuběnský", role: "scénář" },
       { name: "Petr Pouchlý", role: "režie" },
     ],
     paragraph: "Texty jsme psali ručně v Google Docs bez použití generativní AI. Při tvorbě vizuálu jsme si vystačili s Figmou, InDesignem a Blenderem. Pro vytvoření pětice příběhových obrazů jsme použili ComfyUI a ",
