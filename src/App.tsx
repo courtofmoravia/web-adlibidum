@@ -339,13 +339,13 @@ export default function App() {
             <div className="lg:col-span-7 flex flex-col items-center justify-center relative order-1 lg:order-2" data-node-id="1:59">
               <div className="relative w-full max-w-[800px] aspect-[4/3] flex items-center justify-center">
                 <img
-                  src={imgBoxImg1}
+                  src={imgBoxImg}
                   alt="Obsah krabice AdLibidum"
                   className="w-full h-full object-contain pointer-events-none relative z-10 transition duration-500 hover:scale-105"
                   data-node-id="1:64"
                 />
                 <img
-                  src={imgBoxShadow1}
+                  src={imgBoxShadow}
                   alt=""
                   aria-hidden="true"
                   className="absolute -bottom-10 w-[120%] max-w-none pointer-events-none opacity-80 z-0"
