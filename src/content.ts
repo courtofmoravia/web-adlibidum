@@ -12,7 +12,9 @@ export const CONTENT = {
   },
 
   experience: {
-    text: "Staňte se hlavními hrdiny erotikou nasáklého příběhu. Dvě role. Žádné biflování textu a dlouhé přípravy. Jen hravost a prožitek. Vy si najdete čas na sebe. My dodáme rekvizity a příběh. Na jeden večer se stanete femme fatale a detektivem. Naše scénáře vás povedou. Jak daleko? To je jen a jen na vás.",
+    text: "Staňte se hlavními hrdiny erotikou nasáklého příběhu. Dvě role. Žádné biflování textu a dlouhé přípravy. Jen hravost a prožitek.",
+    text2: "Vy si najdete čas na sebe. My dodáme rekvizity a příběh. Na jeden večer se stanete femme fatale a detektivem.",
+    text3: "Naše scénáře vás povedou. Jak daleko? To je jen a jen na vás.",
   },
 
   newsletter: {

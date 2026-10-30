@@ -218,6 +218,36 @@ export default function App() {
               {CONTENT.experience.text}
             </p>
           </div>
+          <div
+            style={{
+              transform: `translateY(${experienceOffset}px)`,
+              transition: 'transform 0.01s linear',
+            }}
+            className="bg-brand-bg border border-brand-fg drop-shadow-[0px_10px_25px_rgba(7,4,42,0.20)] rounded-[24px] p-6 sm:p-10 md:p-16 relative z-10 max-w-[640px] w-full text-left mt-2 sm:mt-4 will-change-transform"
+            data-node-id="1:32"
+          >
+            <p
+              className="font-caslon-regular text-[16px] sm:text-[18px] md:text-[20px] text-brand-fg leading-[1.5]"
+              data-node-id="1:33"
+            >
+              {CONTENT.experience.text2}
+            </p>
+          </div>
+          <div
+            style={{
+              transform: `translateY(${experienceOffset}px)`,
+              transition: 'transform 0.01s linear',
+            }}
+            className="bg-brand-bg border border-brand-fg drop-shadow-[0px_10px_25px_rgba(7,4,42,0.20)] rounded-[24px] p-6 sm:p-10 md:p-16 relative z-10 max-w-[640px] w-full text-left mt-2 sm:mt-4 will-change-transform"
+            data-node-id="1:32"
+          >
+            <p
+              className="font-caslon-regular text-[16px] sm:text-[18px] md:text-[20px] text-brand-fg leading-[1.5]"
+              data-node-id="1:33"
+            >
+              {CONTENT.experience.text3}
+            </p>
+          </div>
         </div>
       </section>
 
