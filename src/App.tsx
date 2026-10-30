@@ -499,7 +499,7 @@ export default function App() {
               {CONTENT.about.headlinePrefix}
             </p>
 
-            <div className="flex flex-col gap-1.5 items-start">
+            <div className="flex flex-col gap-1.5 pt-8 pb-16 items-start">
               {CONTENT.about.team.map((member, i) => (
                 <div key={i} className="flex items-center text-[15px] sm:text-[17px] tracking-wide">
                   <span className="w-[140px] sm:w-[160px] text-right uppercase font-roboto-condensed font-normal pr-4">
