@@ -625,14 +625,14 @@ export default function App() {
 
                   {isOpen && (
                     <div className="pl-0 sm:pl-12 md:pl-24 pt-2 text-brand-fg animate-in fade-in slide-in-from-top-2 duration-300 flex flex-col gap-4">
-                        {item.answerParagraphs.map((paragraph, pIdx) => (
-                          <p
-                            key={pIdx}
-                            className="font-caslon-regular text-[17px] sm:text-[19px] lg:text-[20px] leading-[1.5] max-w-[800px] text-gray-800"
-                          >
-                            {paragraph}
-                          </p>
-                        ))}
+                      {(item.answerParagraphs || [item.answer]).map((paragraph, pIdx) => (
+                        <p
+                          key={pIdx}
+                          className="font-caslon-regular text-[17px] sm:text-[19px] lg:text-[20px] leading-[1.5] max-w-[800px] text-gray-800"
+                        >
+                          {paragraph}
+                        </p>
+                      ))}
                     </div>
                   )}
                 </div>
