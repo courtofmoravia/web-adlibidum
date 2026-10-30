@@ -279,7 +279,7 @@ export default function App() {
               const alignClass = idx === 0 ? "justify-start lg:translate-y-0" : idx === 1 ? "justify-center lg:translate-y-8" : "justify-end lg:translate-y-16";
               return (
                 <div key={idx} className={`flex flex-col items-center ${alignClass}`}>
-                  <div className="bg-brand-bg border border-brand-fg drop-shadow-[0px_10px_20px_rgba(7,4,42,0.18)] rounded-full flex flex-col items-center justify-center px-8 py-16 sm:px-12 sm:py-20 min-h-[460px] sm:min-h-[560px] lg:min-h-[640px] w-full max-w-[400px] text-center transition hover:shadow-2xl duration-300">
+                  <div className="bg-brand-bg border border-brand-fg drop-shadow-[0px_10px_20px_rgba(7,4,42,0.18)] rounded-full flex flex-col items-center justify-center px-8 py-16 sm:px-12 sm:py-20 min-h-[460px] sm:min-h-[560px] lg:min-h-[640px] w-full max-w-[400px] text-center">
                     <div className="flex flex-col gap-6 items-center max-w-[280px] sm:max-w-[310px]">
                       <h3 className="font-caslon-semibold text-[26px] sm:text-[30px] lg:text-[32px] uppercase text-brand-fg tracking-wider" style={{ fontFeatureSettings: '"liga" 0' }}>
                         {pill.title}
