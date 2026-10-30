@@ -495,13 +495,13 @@ export default function App() {
           </div>
 
           <div className="flex flex-col items-center text-center mt-6 mb-12 text-brand-fg">
-            <p className="font-caslon-regular text-[18px] sm:text-[20px] mb-6">
+            <p className="font-caslon-regular text-base sm:text-xl mb-6">
               {CONTENT.about.headlinePrefix}
             </p>
 
-            <div className="flex flex-col gap-1.5 pt-8 pb-16 items-start">
+            <div className="flex flex-col gap-1 pt-8 pb-16 items-start">
               {CONTENT.about.team.map((member, i) => (
-                <div key={i} className="flex items-center text-[15px] sm:text-[17px] tracking-wide">
+                <div key={i} className="flex items-center text-base sm:text-xl tracking-wide">
                   <span className="w-[140px] sm:w-[160px] text-right uppercase font-roboto-condensed font-normal pr-4">
                     {member.role}
                   </span>
@@ -523,7 +523,7 @@ export default function App() {
             data-node-id="1:32"
           >
             <p
-              className="font-caslon-regular text-[16px] sm:text-[18px] md:text-[20px] text-brand-fg leading-[1.5]"
+              className="font-caslon-regular text-base sm:text-[18px] md:text-[20px] text-brand-fg leading-[1.5]"
               data-node-id="1:33"
             >
               {CONTENT.about.paragraph}
